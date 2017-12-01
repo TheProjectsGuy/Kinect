@@ -1,0 +1,16 @@
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\bin\Debug\CameraAndDepthDemoApp_1.exe.config
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\bin\Debug\CameraAndDepthDemoApp_1.exe
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\bin\Debug\CameraAndDepthDemoApp_1.pdb
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\bin\Debug\Microsoft.Kinect.dll
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\bin\Debug\Microsoft.Kinect.xml
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.csprojResolveAssemblyReference.cache
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\MainWindow.g.cs
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\App.g.cs
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1_MarkupCompile.cache
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1_MarkupCompile.lref
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\MainWindow.baml
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.g.resources
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.Properties.Resources.resources
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.csproj.GenerateResource.Cache
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.exe
+D:\RoboManipal\Kinect\Programming\CameraAndDepthDemoApp_1\CameraAndDepthDemoApp_1\obj\Debug\CameraAndDepthDemoApp_1.pdb
