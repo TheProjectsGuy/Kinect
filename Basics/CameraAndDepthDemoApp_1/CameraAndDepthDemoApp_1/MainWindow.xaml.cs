@@ -27,6 +27,8 @@ namespace CameraAndDepthDemoApp_1
         }
 
         KinectSensor connectedKinectSensor;
+        private double minDepthDistanceKinectDepthFrame = 1400;
+        private double maxDepthDistanceKinectDepthFrame = 1500;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -114,17 +116,17 @@ namespace CameraAndDepthDemoApp_1
 
             const int RedComponentIndex = 2, GreenComponentIndex = 1, BlueComponentIndex = 0;  //BGR format, don't care about N
 
-            for (int depthIndex = 0, colorPixelIndex = 0; depthIndex < rawDepthValues.Length ; depthIndex += 1, colorPixelIndex += 4)
+            for (int depthIndex = 0, colorPixelIndex = 0; depthIndex < rawDepthValues.Length; depthIndex += 1, colorPixelIndex += 4)
             {
                 //Get the depth from the raw values using the formula
                 int depth = rawDepthValues[depthIndex] >> DepthImageFrame.PlayerIndexBitmaskWidth;
 
-                if (depth > 1500 || depth < 1400)
+                if (depth > maxDepthDistanceKinectDepthFrame || depth < minDepthDistanceKinectDepthFrame)   //Pont outside of range
                 {   //Make it black
                     imageFramePixels[colorPixelIndex + BlueComponentIndex] = imageFramePixels[colorPixelIndex + GreenComponentIndex] = imageFramePixels[colorPixelIndex + RedComponentIndex] = 0;
                 }
-                else
-                {   //Make it white
+                else   //Point inside the range
+                {   //Make it white 
                     imageFramePixels[colorPixelIndex + BlueComponentIndex] = imageFramePixels[colorPixelIndex + GreenComponentIndex] = imageFramePixels[colorPixelIndex + RedComponentIndex] = 255;
                 }
             }
@@ -143,17 +145,35 @@ namespace CameraAndDepthDemoApp_1
         {
             DisconnectKinect(connectedKinectSensor);
         }
-        
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                connectedKinectSensor.ElevationAngle = Convert.ToInt32(textBox.Text);
+                connectedKinectSensor.ElevationAngle = Convert.ToInt32(adjustTiltTextBox.Text);
             }
             catch (Exception excep)
             {
                 //Do nothing...
             }
+        }
+
+        private void adjustDistancesButton_Click(object sender, RoutedEventArgs e)
+        {
+            minDepthDistanceKinectDepthFrame = Convert.ToDouble(minDistanceTextBox.Text);
+            minDistanceLabel.Content = "The minimum distance is " + minDepthDistanceKinectDepthFrame.ToString();
+            maxDepthDistanceKinectDepthFrame = Convert.ToDouble(maxDistanceTextBox.Text);
+            maxDistanceLabel.Content = "The maximum distance is " + maxDepthDistanceKinectDepthFrame.ToString();
+        }
+
+        private void minDistanceLabel_Loaded(object sender, RoutedEventArgs e)
+        {
+            minDistanceLabel.Content = "The minimum distance is " + minDepthDistanceKinectDepthFrame.ToString();
+        }
+
+        private void maxDistanceLabel_Loaded(object sender, RoutedEventArgs e)
+        {
+            maxDistanceLabel.Content = "The maximum distance is " + maxDepthDistanceKinectDepthFrame.ToString();
         }
     }
 }

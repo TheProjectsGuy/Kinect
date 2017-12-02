@@ -11,8 +11,13 @@
         <Image x:Name="depthImage_ConnectedKinectSensor" HorizontalAlignment="Right" Height="240" Margin="0,10,10,0" VerticalAlignment="Top" Width="320"/>
         <Label x:Name="colorImageLabel" Content="Color Image" HorizontalAlignment="Left" Margin="122,255,0,0" VerticalAlignment="Top"/>
         <Label x:Name="depthImageLabel" Content="Depth Image" HorizontalAlignment="Left" Margin="471,255,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="456,314,0,0" TextWrapping="Wrap" Text="Adjust Tilt" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="adjustTiltTextBox" HorizontalAlignment="Left" Height="23" Margin="456,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
         <Button x:Name="button" Content="Done!" HorizontalAlignment="Left" Margin="526,314,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="button_Click"/>
-        <Label x:Name="label" Content="Adjust tilt of the sensor" HorizontalAlignment="Left" Margin="316,311,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="adjustTiltLabel" Content="Adjust tilt of the sensor" HorizontalAlignment="Left" Margin="316,311,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <TextBox x:Name="minDistanceTextBox" HorizontalAlignment="Left" Height="23" Margin="77,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="minDistanceLabel" Content="The minimum distance is " HorizontalAlignment="Left" Margin="198,367,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.538" Loaded="minDistanceLabel_Loaded"/>
+        <TextBox x:Name="maxDistanceTextBox" HorizontalAlignment="Left" Height="23" Margin="77,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="maxDistanceLabel" Content="The maximum distance is " HorizontalAlignment="Left" Margin="198,421,0,0" VerticalAlignment="Top" Loaded="maxDistanceLabel_Loaded"/>
+        <Button x:Name="adjustDistancesButton" Content="Adjust Distances" HorizontalAlignment="Left" Margin="471,395,0,0" VerticalAlignment="Top" Width="130" Click="adjustDistancesButton_Click"/>
     </Grid>
 </Window>
